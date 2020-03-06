@@ -1,0 +1,34 @@
+{
+  "name": "lessons",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "lint": "node ./node_modules/.bin/eslint ./src",
+    "test": "node $NODE_DEBUG_OPTION ./node_modules/.bin/jasmine JASMINE_CONFIG_PATH=jasmine.json",
+    "karma:chrome": "node ./node_modules/.bin/karma start karma.conf.js --single-run",
+    "karma:phantomjs": "node ./node_modules/.bin/karma start karma.conf.js --single-run --browsers PhantomJS"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@babel/core": "7.7.7",
+    "@babel/preset-env": "7.7.7",
+    "@babel/preset-es2015": "7.0.0-beta.53",
+    "eslint": "6.8.0",
+    "jasmine": "3.5.0",
+    "karma": "4.4.1",
+    "karma-babel-preprocessor": "^8.0.1",
+    "karma-chrome-launcher": "3.1.0",
+    "karma-commonjs": "1.0.0",
+    "karma-html2js-preprocessor": "^1.1.0",
+    "karma-jasmine": "2.0.1",
+    "karma-phantomjs-launcher": "1.0.4",
+    "karma-sourcemap-loader": "0.3.7"
+  },
+  "babel": {
+    "presets": [
+      "@babel/preset-env"
+    ]
+  }
+}
